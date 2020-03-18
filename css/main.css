@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body, html {
+  height: 100%;
+  width: 100%; }
+
+.auxiliary_line {
+  height: 100%;
+  width: 1px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10; }
+
+.auxiliary_line--right {
+  margin-left: -471px; }
+
+.auxiliary_line--left {
+  margin-left: 471px; }
+
+.wrapper {
+  overflow: hidden;
+  min-width: 60rem;
+  /*ширина контейнера + ~10px*/ }
+
+.container {
+  width: 140.625rem;
+  margin: 0 auto; }

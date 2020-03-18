@@ -1,1 +1,1 @@
-# SWA_Sitnik_Task1
+# Ситник Задание№1 в Smart World Academy
