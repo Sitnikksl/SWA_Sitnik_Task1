@@ -190,8 +190,8 @@ a {
   padding-left: 31px;
 }
 
-.login_form input[name="pass"] {
-  margin-top: 30px;
+.login_form input[type='text'] {
+  margin-bottom: 30px;
 }
 
 .login_form-links {
@@ -204,7 +204,12 @@ a {
 .login_form-link:hover{
   text-decoration: underline;
 }
-
+.already{
+  margin-bottom: 27px;
+}
+.already a:hover{
+  color: #0f7bff;
+}
 .login_form-btn {
   color: #ffffff;
   background-color: #0f7bff;
@@ -307,6 +312,9 @@ a {
   position: absolute;
   bottom: 0;
   right: -100px;
+}
+.arrow-up:hover{
+  opacity: .7;
 }
 .arrow-up__link{
 
