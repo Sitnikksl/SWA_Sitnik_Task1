@@ -1,18 +1,7 @@
-.blue-btn {
-  border-radius: 25px;
-  background-color: #0f7bff;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  width: 165px;
-  height: 50px;
-}
 
 /* HOVER НУЖНО ПРИДУМАТЬ----------------------------------------------------------------- */
 
-.blue-btn:hover {
-  opacity: .7;
-}
+
 
 .wrapper {
   overflow: hidden;
