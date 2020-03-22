@@ -70,14 +70,19 @@
     margin-top: 32px;
 }
 .faq-help{
-
+    margin-left: 126px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    display: flex;
+    align-items: center;
 }
 .faq-help__p{
     font-size: 18px;
     font-weight: 500;
 }
 .faq-help__list{
-
+    display: flex;
+    margin-left: 37px;
 }
 .faq-help__item{
     width: 70px;
@@ -86,8 +91,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #0f7bff;
+    color: #0f7bff;
+    margin-right: 15px;
 }
-.faq-help__yes{
-    background-color: #0f7bff;
-    color: #ffffff;
+.faq-help__item:hover{
+      background-color: #0f7bff;
+      color: #ffffff;
 }

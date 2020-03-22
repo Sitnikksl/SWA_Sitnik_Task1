@@ -207,7 +207,7 @@ body, html {
   }
   .arrow-up{
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
     right: -100px;
   }
   .arrow-up:hover{
