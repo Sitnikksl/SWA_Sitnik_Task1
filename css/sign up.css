@@ -1,24 +1,5 @@
-.blue-btn {
-  border-radius: 25px;
-  background-color: #0f7bff;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  width: 165px;
-  height: 50px;
-}
-
+@charset "UTF-8";
 /* HOVER НУЖНО ПРИДУМАТЬ----------------------------------------------------------------- */
-
-.blue-btn:hover {
-  opacity: .7;
-}
-
-.wrapper {
-  overflow: hidden;
-  min-width: 1150px;
-  /*ширина контейнера + ~10px*/
-}
 .login {
   text-align: center;
   margin-top: 230px;
@@ -37,8 +18,12 @@
 }
 
 .login_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 47px;
 }
 
@@ -76,7 +61,8 @@
 }
 
 .login_form input[type="text"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 360px;
   height: 60px;
   border: 1px solid #dcdcdc;
@@ -91,19 +77,26 @@
 .login_form-links {
   margin: 30px 0;
   color: #0f7bff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.login_form-link:hover{
+.login_form-link:hover {
   text-decoration: underline;
 }
-.already{
+
+.already {
   margin-bottom: 27px;
 }
-.already a:hover{
+
+.already a:hover {
   color: #0f7bff;
 }
+
 .login_form-btn {
   color: #ffffff;
   background-color: #0f7bff;
@@ -114,6 +107,7 @@
   cursor: pointer;
 }
 
-.login_form-btn:hover{
+.login_form-btn:hover {
   opacity: .7;
 }
+/*# sourceMappingURL=sign up.css.map */
