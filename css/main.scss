@@ -359,6 +359,10 @@
       }
     }
     @media (min-width: 320px) and (max-width: 650px) {
+      
+      body{
+        font-size: 12px;
+      }
       .wizzet-wrapper{
         flex-direction: column;
         justify-content: center;
@@ -382,12 +386,25 @@
         max-width: 320px;
         padding: 0 5px;
         justify-content: center;
+        flex-direction: column;
+      }
+      .main-logo{
+        text-align: center;
+      }
+      .header-menu{
+        justify-content: center;
       }
       .header-menu__list{
-        margin-left: rem(15px);
+        margin-left: rem(0px);
+      }
+      .header-menu__item{
+        margin-right: rem(10px);
+      }
+      .header-menu__btn{
+        width: rem(80px);
       }
       .header-menu__item:last-child{
-        margin-right: rem(15px);
+        margin-right: rem(5px);
       }
       .login{
         margin-top: rem(50px);
@@ -396,16 +413,26 @@
         margin-bottom: rem(50px);
       }
       .login_desc{
-        max-width: rem(431px);
+        max-width: rem(300px);
       }
-      .header-menu__item{
-        margin-right: rem(15px);
+      .login_links-link{
+        width: rem(120px);
       }
-      body{
-          font-size: 12px;
+      .login_form{
+        width: rem(300px);
+      }
+      .login_form input[type='text']{
+        width: rem(300px);
       }
       .wizzet-desc__info{
         text-align: center;
+        width: rem(300px);
+      }
+      .bottom-lists{
+        justify-content: center;
+      }
+      .bottom-nav{
+        margin-right: rem(10px);
       }
       .footer-flex-container{
         flex-direction: column;

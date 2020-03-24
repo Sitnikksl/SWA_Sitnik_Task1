@@ -525,6 +525,9 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 650px) {
+  body {
+    font-size: 12px;
+  }
   .wizzet-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -559,12 +562,30 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-logo {
+    text-align: center;
+  }
+  .header-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu__list {
-    margin-left: 0.9375rem;
+    margin-left: 0rem;
+  }
+  .header-menu__item {
+    margin-right: 0.625rem;
+  }
+  .header-menu__btn {
+    width: 5rem;
   }
   .header-menu__item:last-child {
-    margin-right: 0.9375rem;
+    margin-right: 0.3125rem;
   }
   .login {
     margin-top: 3.125rem;
@@ -573,16 +594,28 @@ a {
     margin-bottom: 3.125rem;
   }
   .login_desc {
-    max-width: 26.9375rem;
+    max-width: 18.75rem;
   }
-  .header-menu__item {
-    margin-right: 0.9375rem;
+  .login_links-link {
+    width: 7.5rem;
   }
-  body {
-    font-size: 12px;
+  .login_form {
+    width: 18.75rem;
+  }
+  .login_form input[type='text'] {
+    width: 18.75rem;
   }
   .wizzet-desc__info {
     text-align: center;
+    width: 18.75rem;
+  }
+  .bottom-lists {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bottom-nav {
+    margin-right: 0.625rem;
   }
   .footer-flex-container {
     -webkit-box-orient: vertical;
