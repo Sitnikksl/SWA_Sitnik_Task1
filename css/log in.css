@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /* HOVER НУЖНО ПРИДУМАТЬ----------------------------------------------------------------- */
-.wrapper {
-  overflow: hidden;
-  min-width: rem(1150px);
-  /*ширина контейнера + ~10px*/
-}
-
 .login {
   text-align: center;
   margin-top: rem(230px);

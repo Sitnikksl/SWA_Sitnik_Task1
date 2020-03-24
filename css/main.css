@@ -77,6 +77,11 @@ a {
   margin: 0 auto;
 }
 
+.wrapper {
+  overflow: hidden;
+  /*ширина контейнера + ~10px*/
+}
+
 /* HEADER ________________________________________________________________*/
 .header {
   background-color: #f5fcfd;
@@ -122,6 +127,7 @@ a {
   text-transform: uppercase;
   margin-right: 2.5rem;
   font-weight: 600;
+  font-size: 0.75rem;
 }
 
 .header-menu__item:hover {
@@ -139,6 +145,12 @@ a {
 
 /* HEADEr___________________________________________________________________________   */
 /* блок Wizzet------------------------------------------------- */
+.wizzet-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .wizzet {
   padding-top: 8.125rem;
   background-color: #f5fcfd;
@@ -179,6 +191,12 @@ a {
 .wizzet-icon {
   width: 100%;
   height: 100%;
+}
+
+.bottom-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bottom-nav {
@@ -237,6 +255,10 @@ a {
   margin-left: 1.875rem;
 }
 
+.footer-list__item:first-child {
+  margin-left: 0;
+}
+
 .footer-list__item:hover {
   color: #0f7bff;
   text-decoration: underline;
@@ -259,12 +281,6 @@ a {
 
 /* блок Wizzet------------------------------------------------- */
 /* HOVER НУЖНО ПРИДУМАТЬ----------------------------------------------------------------- */
-.wrapper {
-  overflow: hidden;
-  min-width: 71.875rem;
-  /*ширина контейнера + ~10px*/
-}
-
 .login {
   text-align: center;
   margin-top: 14.375rem;
@@ -369,6 +385,9 @@ a {
 }
 
 @media (min-width: 992px) and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1280px;
+  }
   .container {
     max-width: 900px;
   }
@@ -391,6 +410,31 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .wizzet-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wizzet-desc {
+    margin-right: 0;
+    text-align: center;
+  }
+  .wizzet-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1.875rem;
+    margin-bottom: 5rem;
+  }
+  .flex-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .container {
     max-width: 750px;
   }
@@ -398,10 +442,160 @@ a {
     max-width: 750px;
   }
   body {
-    font-size: 2px;
+    font-size: 12px;
   }
   .wizzet-desc__info {
-    width: 22.375rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+  .wizzet-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wizzet-desc {
+    margin-right: 0;
+    text-align: center;
+  }
+  .wizzet-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1.875rem;
+    margin-bottom: 5rem;
+  }
+  .flex-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    max-width: 590px;
+  }
+  .header-container {
+    max-width: 650px;
+    padding: 0 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-menu__list {
+    margin-left: 0.9375rem;
+  }
+  .header-menu__item:last-child {
+    margin-right: 0.9375rem;
+  }
+  .login {
+    margin-top: 3.125rem;
+  }
+  .login_form {
+    margin-bottom: 3.125rem;
+  }
+  .login_desc {
+    max-width: 26.9375rem;
+  }
+  .header-menu__item {
+    margin-right: 0.9375rem;
+  }
+  body {
+    font-size: 12px;
+  }
+  .wizzet-desc__info {
+    text-align: center;
+  }
+  .footer-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1.25rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+  .wizzet-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wizzet-desc {
+    margin-right: 0;
+    text-align: center;
+  }
+  .wizzet-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1.875rem;
+    margin-bottom: 5rem;
+  }
+  .flex-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .header-container {
+    max-width: 320px;
+    padding: 0 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-menu__list {
+    margin-left: 0.9375rem;
+  }
+  .header-menu__item:last-child {
+    margin-right: 0.9375rem;
+  }
+  .login {
+    margin-top: 3.125rem;
+  }
+  .login_form {
+    margin-bottom: 3.125rem;
+  }
+  .login_desc {
+    max-width: 26.9375rem;
+  }
+  .header-menu__item {
+    margin-right: 0.9375rem;
+  }
+  body {
+    font-size: 12px;
+  }
+  .wizzet-desc__info {
+    text-align: center;
+  }
+  .footer-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

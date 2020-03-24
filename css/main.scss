@@ -69,6 +69,11 @@
       width: rem(1140px);
       margin: 0 auto;
     }
+    .wrapper {
+      overflow: hidden;
+      // min-width: rem(1150px);
+      /*ширина контейнера + ~10px*/
+    }
   /* HEADER ________________________________________________________________*/
     .header {
       background-color: #f5fcfd;
@@ -103,6 +108,7 @@
       text-transform: uppercase;
       margin-right: rem(40px);
       font-weight: 600;
+      font-size: rem(12px);
     }
     
     .header-menu__item:hover {
@@ -121,7 +127,9 @@
   
   
     /* блок Wizzet------------------------------------------------- */
-    
+  .wizzet-wrapper{
+    display: flex;
+  }
   .wizzet {
       padding-top: rem(130px);
       background-color: #f5fcfd;
@@ -162,6 +170,9 @@
       height: 100%;
     }
     
+    .bottom-lists{
+      display: flex;
+    }
     .bottom-nav {
       /* display: inline-block; */
       margin-right: rem(115px);
@@ -205,6 +216,9 @@
     .footer-list__item{
       margin-left: rem(30px);
     }
+    .footer-list__item:first-child{
+      margin-left: 0;
+    }
     .footer-list__item:hover{
       color: #0f7bff;
       text-decoration: underline;
@@ -230,6 +244,9 @@
     // ---------------------------------------------МЕДИА ЗАПРОСЫ
 
      @media (min-width: 992px) and (max-width: 1280px){
+      .wrapper{
+        max-width: 1280px;
+      }
       .container{
           max-width: 900px;
       }
@@ -238,6 +255,7 @@
       }
       .footer-flex-container{
           max-width: 900px;
+          
       }
       body{
           font-size: 14px;
@@ -250,7 +268,25 @@
         margin-right: rem(0px);
       }
     }
+
+
     @media (min-width: 768px) and (max-width: 991px) {
+      .wizzet-wrapper{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .wizzet-desc{
+        margin-right: 0;
+        text-align: center;
+      }
+      .wizzet-social{
+        justify-content: center;
+        margin-top: rem(30px);
+        margin-bottom: rem(80px);
+      }
+      .flex-container{
+        justify-content: center;
+      }
       .container{
         max-width: 750px;
       }
@@ -258,9 +294,125 @@
         max-width: 750px;
       }
       body{
-          font-size: 2px;
+          font-size: 12px;
       }
       .wizzet-desc__info{
-        width: rem(358px);
+        text-align: center;
+      }
+    }
+    @media (min-width: 650px) and (max-width: 767px) {
+      .wizzet-wrapper{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .wizzet-desc{
+        margin-right: 0;
+        text-align: center;
+      }
+      .wizzet-social{
+        justify-content: center;
+        margin-top: rem(30px);
+        margin-bottom: rem(80px);
+      }
+      .flex-container{
+        justify-content: center;
+      }
+      .container{
+        max-width: 590px;
+      }
+      .header-container{
+        max-width: 650px;
+        padding: 0 5px;
+        justify-content: center;
+      }
+      .header-menu__list{
+        margin-left: rem(15px);
+      }
+      .header-menu__item:last-child{
+        margin-right: rem(15px);
+      }
+      .login{
+        margin-top: rem(50px);
+      }
+      .login_form{
+        margin-bottom: rem(50px);
+      }
+      .login_desc{
+        max-width: rem(431px);
+      }
+      .header-menu__item{
+        margin-right: rem(15px);
+      }
+      body{
+          font-size: 12px;
+      }
+      .wizzet-desc__info{
+        text-align: center;
+      }
+      .footer-flex-container{
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-list{
+        justify-content: center;
+        margin-top: rem(20px); 
+      }
+    }
+    @media (min-width: 320px) and (max-width: 650px) {
+      .wizzet-wrapper{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .wizzet-desc{
+        margin-right: 0;
+        text-align: center;
+      }
+      .wizzet-social{
+        justify-content: center;
+        margin-top: rem(30px);
+        margin-bottom: rem(80px);
+      }
+      .flex-container{
+        justify-content: center;
+      }
+      .container{
+        max-width: 320px;
+      }
+      .header-container{
+        max-width: 320px;
+        padding: 0 5px;
+        justify-content: center;
+      }
+      .header-menu__list{
+        margin-left: rem(15px);
+      }
+      .header-menu__item:last-child{
+        margin-right: rem(15px);
+      }
+      .login{
+        margin-top: rem(50px);
+      }
+      .login_form{
+        margin-bottom: rem(50px);
+      }
+      .login_desc{
+        max-width: rem(431px);
+      }
+      .header-menu__item{
+        margin-right: rem(15px);
+      }
+      body{
+          font-size: 12px;
+      }
+      .wizzet-desc__info{
+        text-align: center;
+      }
+      .footer-flex-container{
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-list{
+        justify-content: center;
+        margin-top: rem(20px); 
       }
     }
