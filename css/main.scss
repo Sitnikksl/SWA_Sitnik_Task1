@@ -1,0 +1,266 @@
+@function rem($px){
+    @return $px/16px + 0rem;
+}  
+  body, html {
+      height: 100%;
+      width: 100%;
+    }
+    
+    body {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      color: #333333;
+    }
+    
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul {
+      padding-inline-start: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+    
+    li {
+      list-style-type: none;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .blue-btn {
+      border-radius: 25px;
+      background-color: #0f7bff;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      width: rem(165px);
+      height: rem(50px);
+    }
+    .blue-btn:hover {
+      opacity: .7;
+    }
+    .auxiliary_line {
+      height: 100%;
+      width: 1px;
+      background-color: blue;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 10;
+    }
+    
+    .auxiliary_line--right {
+      margin-left: rem(-571px);
+    }
+    
+    .auxiliary_line--left {
+      margin-left: rem(570px);
+    }
+    .flex-container{
+      display: flex;
+    }
+    .container {
+      width: rem(1140px);
+      margin: 0 auto;
+    }
+  /* HEADER ________________________________________________________________*/
+    .header {
+      background-color: #f5fcfd;
+      padding: rem(34px) 0;
+      box-sizing: border-box;
+    }
+    
+    .header-container {
+      width: rem(1620px);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .main-logo {
+      color: #0f7bff;
+      font-size: rem(36px);
+      font-weight: 700;
+    }
+    
+    .header-menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .header-menu__list {
+      display: flex;
+    }
+    
+    .header-menu__item {
+      color: #929292;
+      text-transform: uppercase;
+      margin-right: rem(40px);
+      font-weight: 600;
+    }
+    
+    .header-menu__item:hover {
+      color: #0f7bff;
+    }
+    
+    .header-menu__item:last-child {
+      margin-right: rem(52px);
+    }
+    
+    .header-menu__btn {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  /* HEADEr___________________________________________________________________________   */
+  
+  
+    /* блок Wizzet------------------------------------------------- */
+    
+  .wizzet {
+      padding-top: rem(130px);
+      background-color: #f5fcfd;
+    }
+    
+    .wizzet-desc {
+      /* display: inline-block; */
+      margin-right: rem(125px);
+    }
+    
+    .wizzet-desc__info {
+      width: rem(458px);
+      line-height: rem(27px);
+      margin-top: rem(32px);
+    }
+    
+    .wizzet-social {
+      display: flex;
+      margin-top: rem(38px);
+    }
+    
+    .wizzet-social__item {
+      margin-right: rem(15px);
+    }
+    
+    .wizzet-social__link {
+      display: block;
+      width: rem(20px);
+      height: rem(20px);
+    }
+    
+    .wizzet-social__link:hover .wizzet-icon {
+      fill: #0f7bff;
+    }
+    
+    .wizzet-icon {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .bottom-nav {
+      /* display: inline-block; */
+      margin-right: rem(115px);
+    }
+    .bottom-nav_last{
+      margin-right: 0;
+    }
+    
+    .bottom-nav__title {
+      font-size: rem(18px);
+      color: #333333;
+      font-weight: 500;
+      margin-bottom: rem(36px);
+    }
+    
+    .bottom-nav__item {
+      margin-bottom: rem(20px);
+    }
+    
+    .bottom-nav__link {
+      color: #929292;
+    }
+    .bottom-nav__link:hover{
+      color: #0f7bff;
+      text-decoration: underline;
+    }
+    .footer{
+      border-top: 1px solid #dcdcdc;
+      background-color: #f5fcfd;
+      padding: rem(42px) 0;
+    }
+    .footer-flex-container{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 0 auto;
+    }
+    .footer-list{
+      display: flex;
+    }
+    .footer-list__item{
+      margin-left: rem(30px);
+    }
+    .footer-list__item:hover{
+      color: #0f7bff;
+      text-decoration: underline;
+    }
+    .arrow-up{
+      position: absolute;
+      bottom: -100%;
+      right: rem(-100px);
+    }
+    .arrow-up:hover{
+      opacity: .7;
+    }
+    .arrow-up__img{
+      width: rem(45px);
+      height: rem(45px);
+    }
+     /* блок Wizzet------------------------------------------------- */
+     
+    //  -------------------------------------------------ИМПОРТЫ
+     @import 'log in.scss';
+
+
+    // ---------------------------------------------МЕДИА ЗАПРОСЫ
+
+     @media (min-width: 992px) and (max-width: 1280px){
+      .container{
+          max-width: 900px;
+      }
+      .header-container{
+          max-width: 900px;
+      }
+      .footer-flex-container{
+          max-width: 900px;
+      }
+      body{
+          font-size: 14px;
+      }
+      .bottom-nav{
+        margin-right: rem(80px);
+      }
+      .wizzet-desc__info{
+        width: rem(300px);
+        margin-right: rem(0px);
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .container{
+        max-width: 750px;
+      }
+      .header-container{
+        max-width: 750px;
+      }
+      body{
+          font-size: 2px;
+      }
+      .wizzet-desc__info{
+        width: rem(358px);
+      }
+    }
