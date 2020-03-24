@@ -1,0 +1,107 @@
+.frequent-wrap{
+    display: flex;
+}
+.frequent{
+    background-color: #f5fcfd;
+    border-top: 1px solid #dcdcdc;
+}
+.frequent-info{
+    margin-top: rem(140px);
+}
+.frequent-title{
+    color: #333333;
+    font-size: rem(18px);
+    font-weight: 500;
+}
+.frequent-main-title{
+    text-transform: uppercase;
+    margin: rem(30px) 0;
+}
+.frequent-img{
+    margin-top: rem(36px);
+    margin-left: rem(123px);
+    margin-bottom: rem(36px);
+}
+.faq-wrap{
+    display: flex;
+}
+.faq{
+    padding-top: rem(130px);
+}
+.faq__tab{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.faq__item{
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+}
+.faq__link{
+    display: block;
+    box-sizing: border-box;
+    width: rem(360px);
+    padding: rem(21px) 0 rem(21px) rem(30px);
+    font-size: rem(18px);
+    color: #333333;
+    font-weight: 500;
+}
+.faq__link_active{
+    background-color: #0f7bff;
+    color: #fff;
+    border-radius: 5px;
+}
+.faq__link:hover{
+    background-color: #0f7bff;
+    color: #fff;
+    border-radius: 5px;
+}
+.faq-desc{
+    margin-left: rem(126px);
+}
+.faq-desc__item{
+    width: rem(643px);
+    margin-top: rem(47px);
+}
+.faq-desc__item:first-child{
+    margin-top: 0;
+}
+.faq-desc__title{
+    font-size: rem(24px);
+    color: #333333;
+}
+.faq-desc__text{
+    font-size: rem(16px);
+    color: #929292;
+    line-height: rem(27px);
+    margin-top: rem(32px);
+}
+.faq-help{
+    margin-left: rem(126px);
+    margin-top: rem(50px);
+    margin-bottom: rem(130px);
+    display: flex;
+    align-items: center;
+}
+.faq-help__p{
+    font-size: rem(18px);
+    font-weight: 500;
+}
+.faq-help__list{
+    display: flex;
+    margin-left: rem(37px);
+}
+.faq-help__item{
+    width: rem(70px);
+    height: rem(30px);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0f7bff;
+    color: #0f7bff;
+    margin-right: rem(15px);
+}
+.faq-help__item:hover{
+      background-color: #0f7bff;
+      color: #ffffff;
+}

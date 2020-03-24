@@ -110,4 +110,8 @@
 .login_form-btn:hover {
   opacity: .7;
 }
+
+.login_form input[name="pass"] {
+  margin-top: 0;
+}
 /*# sourceMappingURL=sign up.css.map */
