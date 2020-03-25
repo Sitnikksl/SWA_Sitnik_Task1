@@ -79,6 +79,7 @@ a {
 
 .wrapper {
   overflow: hidden;
+  position: relative;
   /*ширина контейнера + ~10px*/
 }
 
@@ -232,6 +233,7 @@ a {
   border-top: 1px solid #dcdcdc;
   background-color: #f5fcfd;
   padding: 2.625rem 0;
+  position: relative;
 }
 
 .footer-flex-container {
@@ -266,8 +268,10 @@ a {
 
 .arrow-up {
   position: absolute;
-  bottom: -100%;
-  right: -6.25rem;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 2%;
 }
 
 .arrow-up:hover {
@@ -1244,6 +1248,12 @@ a {
   .wizzet-desc__info {
     text-align: center;
   }
+  .arrow-up {
+    right: 50%;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    bottom: 50%;
+  }
 }
 
 @media (min-width: 650px) and (max-width: 767px) {
@@ -1352,6 +1362,10 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 1.25rem;
+  }
+  .arrow-up {
+    right: 3%;
+    bottom: 50%;
   }
 }
 
@@ -1506,6 +1520,12 @@ a {
   }
   .faq-help {
     margin-left: 0;
+  }
+  .arrow-up {
+    right: 3%;
+    bottom: 100%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 /*# sourceMappingURL=main.css.map */
