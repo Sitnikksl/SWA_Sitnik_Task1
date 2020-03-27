@@ -161,6 +161,10 @@
   opacity: .7;
 }
 
+.blog-left {
+  margin-top: rem(130px);
+}
+
 .blog-right {
   margin-top: rem(130px);
   margin-left: rem(30px);

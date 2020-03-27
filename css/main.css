@@ -814,6 +814,10 @@ a {
   opacity: .7;
 }
 
+.blog-left {
+  margin-top: 8.125rem;
+}
+
 .blog-right {
   margin-top: 8.125rem;
   margin-left: 1.875rem;
