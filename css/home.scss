@@ -807,7 +807,9 @@ font-size: rem(36px);
     }
     .device{
         width: 768px;
-        background-position: center 0;
+    background-position: center 232px;
+    background-size: contain;
+    background-repeat: no-repeat;
     }
     .container-center{
         width: 100%;
@@ -993,6 +995,9 @@ font-size: rem(36px);
         width: 320px;
         justify-content: space-around;
     }
+    .hero{
+        background-position: -600px 21px;
+    }
     .home-header__logo{
         font-size: 12px;
         width: 60px;
@@ -1017,11 +1022,11 @@ font-size: rem(36px);
         width: 640px;
     }
     .device{
-        width: 334px;
-        background-position: center 223px;
-        background-size: cover;
+        width: 315px;
+        background-position: center 331px;
+        background-size: contain;
         background-repeat: no-repeat;
-        margin-top: -80px;
+        margin-top: -304px;
     }
     .container-center{
         width: 100%;
@@ -1114,17 +1119,65 @@ font-size: rem(36px);
     .price__list{
         margin-bottom: 30px;
     }
+    .trust__list{
+        padding-left: 15px;
+    }
+    .trust__item{
+        margin-right: 15px;
+    }
     .trust__left__img{
         
     }
     .news__block{
         flex-direction: column;
+        margin-bottom: 0;
     }
     .news__left{
         margin: 0 auto;
+        width: 318px;
+    }
+    .news__left__img{
+        width: 315px;
+        height: 173px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .news__left__title{
+        width: 100%;
+    }
+    .news__left__desc{
+        width: 100%;
+        text-align: justify;
     }
     .news__right{
         margin: 30px auto;
+    }
+    .news__right__item__right{
+        margin-left: 10px;
+        width: 180px;
+    }
+    .news__right__item__right__title{
+        width: 100%;
+        font-size: 16px;
+    }
+    .news__right__item__right__subtitle{
+        width: 100%;
+        margin-top: 2px;
+    }
+    .news__right__item__left{
+        width: 100px;
+        height: 72px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .sub__form{
+        width: 305px;
+    }
+    .sub__form input[type=text]{
+        width: 184px;
+    }
+    .sub__form a{
+        width: 121px;
     }
     .plan__list{
         flex-direction: column;
@@ -1154,5 +1207,12 @@ font-size: rem(36px);
     }
     .trial-wrap{
         justify-content: center;
+    }
+    .home-footer__list{
+        align-items: center;
+        margin: 0 18px;
+    }
+    .home-footer__item{
+        margin-right: 5px;
     }
 }
