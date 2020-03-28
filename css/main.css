@@ -123,6 +123,10 @@ a {
   display: flex;
 }
 
+.header-menu__link {
+  font-size: 16px;
+}
+
 .header-menu__item {
   color: #929292;
   text-transform: uppercase;
@@ -183,6 +187,32 @@ a {
   display: block;
   width: 1.25rem;
   height: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wizzet-social__link_fb {
+  background-image: url(../img/social/facebook.svg);
+}
+
+.wizzet-social__link_fb:hover {
+  background-image: url(../img/social/facebook_hover.svg);
+}
+
+.wizzet-social__link_tw {
+  background-image: url(../img/social/twitter.svg);
+}
+
+.wizzet-social__link_tw:hover {
+  background-image: url(../img/social/twitter_hover.svg);
+}
+
+.wizzet-social__link_yt {
+  background-image: url(../img/social/yt.svg);
+}
+
+.wizzet-social__link_yt:hover {
+  background-image: url(../img/social/yt_hover.svg);
 }
 
 .wizzet-social__link:hover .wizzet-icon {
@@ -226,7 +256,6 @@ a {
 
 .bottom-nav__link:hover {
   color: #0f7bff;
-  text-decoration: underline;
 }
 
 .footer {
@@ -263,7 +292,6 @@ a {
 
 .footer-list__item:hover {
   color: #0f7bff;
-  text-decoration: underline;
 }
 
 .arrow-up {
@@ -300,6 +328,7 @@ a {
   font-weight: 400;
   width: 45.6875rem;
   margin-top: 2.0625rem;
+  line-height: 27px;
 }
 
 .login_links {
@@ -323,6 +352,7 @@ a {
   width: 10.3125rem;
   /* font-weight: 700; */
   padding: 1.3125rem 0;
+  font-weight: 700;
 }
 
 .login_links-fb {
@@ -370,8 +400,12 @@ a {
           justify-content: space-between;
 }
 
-.login_form-link:hover {
-  text-decoration: underline;
+.login_links-fb:hover {
+  opacity: .7;
+}
+
+.login_links-tw:hover {
+  opacity: .7;
 }
 
 .login_form-btn {
@@ -711,6 +745,7 @@ a {
   width: 1.125rem;
   height: 1.125rem;
   margin-right: 0.5625rem;
+  background-repeat: no-repeat;
 }
 
 .blog-info__text {
@@ -720,14 +755,17 @@ a {
 
 .blog-info__img-date {
   background-image: url(../img/blog/blogDate.png);
+  background-repeat: no-repeat;
 }
 
 .blog-info__img-comment {
   background-image: url(../img/blog/blogComment.png);
+  background-repeat: no-repeat;
 }
 
 .blog-info__img-like {
   background-image: url(../img/blog/blogLike.png);
+  background-repeat: no-repeat;
 }
 
 .blog-desc__text {
@@ -977,15 +1015,26 @@ a {
   }
   .blog-right {
     margin-left: 0;
+    width: 750px;
   }
   .blog-block {
-    width: 680px;
+    width: 750px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .blog__item {
+    width: 750px;
+  }
+  .blog-tab {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .search-box {
-    width: 713px;
+    width: 750px;
   }
   .search-form {
-    width: 582px;
+    width: 618px;
   }
   .recent__list {
     display: -webkit-box;
@@ -1017,6 +1066,11 @@ a {
   }
   .blog-img {
     display: none;
+  }
+  .blog-tab {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .blog__list {
     display: -webkit-box;
@@ -1088,6 +1142,11 @@ a {
   .blog-img {
     display: none;
   }
+  .blog-tab {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .blog-right {
     margin-top: 0;
   }
@@ -1110,7 +1169,7 @@ a {
             flex-direction: column;
   }
   .blog__item {
-    width: 290px;
+    width: 100%;
     padding: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1338,6 +1397,15 @@ a {
     padding: 0.25rem 0.4375rem;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .faq-desc-wrap {
     margin-top: 4.375rem;
@@ -1512,6 +1580,15 @@ a {
     width: 100%;
     height: 100%;
     font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .faq-desc-wrap {
     margin-top: 4.375rem;

@@ -15,6 +15,7 @@
   font-weight: 400;
   width: rem(731px);
   margin-top: rem(33px);
+  line-height: 27px;
 }
 
 .login_links {
@@ -38,6 +39,7 @@
   width: rem(165px);
   /* font-weight: 700; */
   padding: rem(21px) 0;
+  font-weight: 700;
 }
 
 .login_links-fb {
@@ -85,8 +87,12 @@
           justify-content: space-between;
 }
 
-.login_form-link:hover {
-  text-decoration: underline;
+.login_links-fb:hover {
+  opacity: .7;
+}
+
+.login_links-tw:hover {
+  opacity: .7;
 }
 
 .login_form-btn {
