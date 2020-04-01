@@ -141,13 +141,13 @@
     margin-top: rem(40px);
 }
 .advantage__img_1{
-    background-image: url(../img/advantage/ad1.png);
+    background-image: url(/img/advantage/ad1.png);
 }
 .advantage__img_2{
-    background-image: url(../img/advantage/ad2.png);
+    background-image: url(/img/advantage/ad2.png);
 }
 .advantage__img_3{
-    background-image: url(../img/advantage/ad3.png);
+    background-image: url(/img/advantage/ad3.png);
 }
 .advantage__title{
     font-size: rem(18px);
@@ -1165,9 +1165,15 @@ font-size: rem(36px);
     }
     .trust__list{
         padding-left: 15px;
+        flex-direction: column;
     }
     .trust__item{
         margin-right: 15px;
+        width: 230px;
+        margin-bottom: 20px;
+    }
+    .trust__item:last-child{
+        margin-bottom: 0;
     }
     .trust__left__img{
         
@@ -1243,11 +1249,12 @@ font-size: rem(36px);
     .trust__title{
         width: 280px;
         text-align: center;
-    margin: 0 auto;
+        margin: 40px auto 0;
     }
     .trust__links{
         justify-content: center;
         margin-bottom: 20px;
+        margin-top: 15px;
     }
     .trial-wrap{
         justify-content: center;

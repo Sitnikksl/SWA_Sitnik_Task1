@@ -194,15 +194,15 @@
 }
 
 .advantage__img_1 {
-  background-image: url(../img/advantage/ad1.png);
+  background-image: url(/img/advantage/ad1.png);
 }
 
 .advantage__img_2 {
-  background-image: url(../img/advantage/ad2.png);
+  background-image: url(/img/advantage/ad2.png);
 }
 
 .advantage__img_3 {
-  background-image: url(../img/advantage/ad3.png);
+  background-image: url(/img/advantage/ad3.png);
 }
 
 .advantage__title {
@@ -1442,9 +1442,18 @@
   }
   .trust__list {
     padding-left: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .trust__item {
     margin-right: 15px;
+    width: 230px;
+    margin-bottom: 20px;
+  }
+  .trust__item:last-child {
+    margin-bottom: 0;
   }
   .news__block {
     -webkit-box-orient: vertical;
@@ -1526,13 +1535,14 @@
   .trust__title {
     width: 280px;
     text-align: center;
-    margin: 0 auto;
+    margin: 40px auto 0;
   }
   .trust__links {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 20px;
+    margin-top: 15px;
   }
   .trial-wrap {
     -webkit-box-pack: center;
