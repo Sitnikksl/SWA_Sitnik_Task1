@@ -80,6 +80,7 @@ a {
 .wrapper {
   overflow: hidden;
   position: relative;
+  width: 100%;
   /*ширина контейнера + ~10px*/
 }
 
